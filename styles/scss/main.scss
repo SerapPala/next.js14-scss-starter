@@ -1,0 +1,15 @@
+//base
+@import "base/base";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "utils/utils";
+
+//components
+@import "components/header";
+@import "components/navbar";
+@import "components/footer";
+
+.main {
+  background: $purple172;
+  color:$white;
+}
