@@ -1,20 +1,72 @@
+//Custom Breadpoint mixins
+
+// X-Small devices
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Extra extra large devices
+@mixin xxl {
+  @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+//custom flex mixins
+
 @mixin flexStart{
   display:flex;
   align-items: center;
   justify-content: start;
-}@mixin flexCenter{
+}
+
+@mixin flexCenter{
   display:flex;
   align-items: center;
   justify-content: center;
-}@mixin flexJustifyEnd{
+}
+
+@mixin flexJustifyEnd{
   display:flex;
   justify-content: flex-end;
 }
+
 @mixin  flexBetweeen {
   display:flex;
   align-items: center;
   justify-content: space-between;
 }
+
 @mixin flexVerticalCenter {
     display:flex;
     align-items: center;
@@ -25,6 +77,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 @mixin absoluteContent{
   position: absolute;
   left: 0;
