@@ -1,0 +1,6 @@
+header {
+@include  flexBetweeen;
+  @include xl {
+    background: $black;
+  }
+}
